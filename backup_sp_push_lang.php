@@ -6,7 +6,7 @@ define("PASSWORD", "spicesmart");
 define("DATABASENAME", "newspicemart");
 
 
-backup_tables(HOST,USERNAME,PASSWORD,DATABASENAME);
+backup_tables(HOST,USERNAME,PASSWORD,DATABASENAME,'push_lang');
 
 /* backup the db OR just a table */
 function backup_tables($host,$user,$pass,$name,$tables = '*')
