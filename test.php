@@ -12,7 +12,7 @@ backup_tables(HOST,USERNAME,PASSWORD,DATABASENAME, 'user');
 function backup_tables($host,$user,$pass,$name,$tables = '*')
 {
 	$link = mysqli_connect($host,$user,$pass);
-	mysqli_select_db($name,$link);
+	mysqli_select_db($link,$name);
 	
 	//get all of the tables
 	if($tables == '*')
